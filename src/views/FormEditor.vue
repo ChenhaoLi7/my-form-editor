@@ -13,7 +13,9 @@
 </template>
 
 <script>
-import FormCanvas from '@/components/FormCanvas.vue';
+import FormCanvas from '@/components/form-builder/FormCanvas.vue';
+
+
 
 export default {
   name: 'FormEditor',

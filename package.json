@@ -12,7 +12,9 @@
     "element-china-area-data": "^6.1.0",
     "element-plus": "^2.5.5",
     "vue": "^3.2.13",
-    "vuedraggable": "^2.24.3"
+    "vue-router": "^4.2.5",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

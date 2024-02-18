@@ -2,7 +2,7 @@
   <div class="form-canvas">
     <draggable v-model="formItems" @start="dragging = true" @end="dragging = false">
       <div
-        v-for="(item, index) in formItems"
+        v-for="item in formItems"
         :key="item.id"
         class="form-item"
         :class="{ 'selected': selectedItem === item }"
@@ -14,6 +14,7 @@
     </draggable>
   </div>
 </template>
+
 
 <script>
 import draggable from 'vuedraggable';

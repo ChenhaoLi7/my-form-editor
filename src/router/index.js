@@ -1,13 +1,9 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import FormEditor from '@/views/FormEditor.vue';
 import FormPreview from '@/views/FormPreview.vue';
 
-Vue.use(Router);
-
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -19,6 +15,8 @@ export default new Router({
       name: 'FormPreview',
       component: FormPreview
     }
-    // You can add more routes here as needed.
+    // 其他路由...
   ]
 });
+
+export default router;
